@@ -10,11 +10,9 @@ import Explanation from '@/components/AboutNerf.vue'
 </template>
 
 <style>
-@media {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 </style>
