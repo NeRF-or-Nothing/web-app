@@ -1,5 +1,5 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
+import WelcomeItem from './ListItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
@@ -12,7 +12,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Documentation</template>
+    <template #heading>Introduction</template>
 
     Vue’s
     <a target="_blank" href="https://vuejs.org/">official documentation</a>
