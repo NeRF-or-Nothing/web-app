@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import UploadPage from '@/components/UploadPage.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <UploadPage />
   </main>
 </template>
