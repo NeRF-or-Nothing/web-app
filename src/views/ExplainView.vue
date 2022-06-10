@@ -8,11 +8,3 @@ import Explanation from '@/components/AboutNerf.vue'
     <Explanation />
   </div>
 </template>
-
-<style>
-.about {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-</style>
