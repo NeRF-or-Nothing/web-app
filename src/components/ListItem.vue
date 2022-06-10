@@ -36,6 +36,7 @@ i {
   display: flex;
   place-items: center;
   place-content: center;
+  margin-left: 2rem;
   width: 32px;
   height: 32px;
   color: var(--color-text);
@@ -53,6 +54,7 @@ i {
   content: ' ';
   border-left: 1px solid var(--color-border);
   position: absolute;
+  margin-left: 2rem;
   left: 0;
   bottom: calc(50% + 25px);
   height: calc(50% - 25px);
@@ -60,6 +62,7 @@ i {
 
 .item:after {
   content: ' ';
+  margin-left: 2rem;
   border-left: 1px solid var(--color-border);
   position: absolute;
   left: 0;
