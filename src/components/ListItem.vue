@@ -19,6 +19,7 @@
   margin-left: 1rem;
 }
 
+
 h3 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -32,6 +33,12 @@ h3 {
 }
 
 i {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--color-text);
   top: calc(50% - 25px);
   left: -26px;
   position: absolute;
