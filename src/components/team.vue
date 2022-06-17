@@ -12,7 +12,7 @@ import SupportIcon from "./icons/IconSupport.vue";
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Our Project Lead: Eric</template>
+    <template #heading>Project Lead: Eric</template>
     Eric Nelson, CS major. I'm interested in the machine learning and computer
     vision aspects of this project as well as ensuring everyone's individual
     success.
@@ -29,9 +29,36 @@ import SupportIcon from "./icons/IconSupport.vue";
 
   <ListItem>
     <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>Yuk Ting</template>
+    Yuk Ting Kong, CS major, building python web server with flask.
+  </ListItem>
+
+  <ListItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>Annie</template>
+    Annie Xu, CSE dual CS major at RPI. I am currently working on back end of
+    the project with a focus on structure for motion. I looove snacking and
+    badminton.
+  </ListItem>
+
+  <ListItem>
+    <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>Gray</template>
+    <template #heading>Keqian</template>
+    Keqian Wang, CS major, working on accepting video from front end with flask
+    in python
+  </ListItem>
+
+  <ListItem>
+    <template #icon>
+      <DocumentationIcon />
+    </template>
+    <template #heading>Grey</template>
     Hao(Grey) Ding, CS & MATH dual major student, enjoy video games and movies,
     plan to clear Death Stranding by October, current struggling in Vue and Js
   </ListItem>
@@ -41,7 +68,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       <ToolingIcon />
     </template>
     <template #heading>Jackie</template>
-    Jiawei (Jackie) Zhao. I am a RPI CS duo ECON student and working on the
+    Jiawei (Jackie) Zhao. I am a RPI CS dual ECON student and working on the
     front end portion of this project. Learning vue.js framwork, HTML, CSS along
     the way.
   </ListItem>
