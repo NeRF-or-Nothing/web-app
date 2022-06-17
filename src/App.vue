@@ -5,8 +5,9 @@ import MainPage from '@/components/Header.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    <div id="app">
+        <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
+    </div>
     <div class="wrapper">
       <MainPage msg="NeRF or Nothing!" />
 
