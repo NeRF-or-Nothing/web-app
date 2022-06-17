@@ -1,11 +1,17 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import MainPage from '@/components/Header.vue'
+import { RouterLink, RouterView } from "vue-router";
+import MainPage from "@/components/Header.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="@/assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <MainPage msg="NeRF or Nothing!" />
@@ -23,7 +29,7 @@ import MainPage from '@/components/Header.vue'
 </template>
 
 <style>
-@import '@/assets/base.css';
+@import "@/assets/base.css";
 
 #app {
   max-width: 1280px;
@@ -85,7 +91,6 @@ header {
   place-items: center;
   padding-right: calc(var(--section-gap) / 2);
 }
-
 
 .logo {
   margin: 0 2rem 0 0;
