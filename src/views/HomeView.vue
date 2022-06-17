@@ -1,9 +1,9 @@
 <script setup>
-import UploadPage from '@/components/UploadPage.vue'
+import Upload from '@/components/Upload.vue'
 </script>
 
 <template>
   <main>
-    <UploadPage />
+    <Upload />
   </main>
 </template>
