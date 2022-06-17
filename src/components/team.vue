@@ -20,11 +20,41 @@ import SupportIcon from "./icons/IconSupport.vue";
 
   <ListItem>
     <template #icon>
+      <DocumentationIcon />
+    </template>
+    <template #heading>Anthony</template>
+    Anthony DiGiovanna, CS major. I'm fascinated by machine learning and
+    artificial intelligence. Working with structure from motion and NeRFs on the
+    backend.
+  </ListItem>
+
+  <ListItem>
+    <template #icon>
       <ToolingIcon />
     </template>
     <template #heading>Amaan</template>
     Amaan Qureshi, RPI EE & Math dual who enjoys CS and reverse engineering in
     his free time and is working on the API for this project
+  </ListItem>
+
+  <ListItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>Dylan</template>
+    Dylan Taylor, CS major. I enjoy how computation is used to solve everyday
+    problems, and I'm working more on the services and managing containers area
+    of the project.
+  </ListItem>
+
+  <ListItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>Sam</template>
+    I'm Sam DeMarrais, a computer science and computational biology major. I'm
+    working on the front end, and I hope to learn more about how machine
+    learning, web servers, and websites function by working on this project.
   </ListItem>
 
   <ListItem>
