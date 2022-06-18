@@ -1,19 +1,27 @@
+
+<!-- Change this script to setup! -->
+
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
+import {ref} from 'vue'
+
+const emits = defineEmits(["sendFile"])
+const filename = ref("Drag or select video file")
+const file =  ref(null)
+function setFile() {
+  console.log("what")
+  var curfile = document.getElementById('input').files[0]
+  file.value = curfile
+  filename.value = curfile.name
+}
 </script>
 
-
-
 <template>
-    <input type="file" accept="video/*">
-    <p>Drag or select video file</p>
-    <button type="submit">Upload</button>
+    <input id="input" type="file" @input='setFile()'>
+    <p>{{filename}}</p>
+    <button type="submit" @click='$emit("sendFile", file)'></button>
 </template>
+
+<!-- TODO: Change this styling to be more generalized -->
 
 <style scoped>
 p{

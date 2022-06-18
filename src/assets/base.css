@@ -1,4 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
+/* TODO: make a list of consistent colors to be used all around the program. */
+
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
