@@ -1,6 +1,4 @@
 
-<!-- Change this script to setup! -->
-
 <script setup>
 import {ref} from 'vue'
 
@@ -8,7 +6,6 @@ const emits = defineEmits(["sendFile"])
 const filename = ref("Drag or select video file")
 const file =  ref(null)
 function setFile() {
-  console.log("what")
   var curfile = document.getElementById('input').files[0]
   file.value = curfile
   filename.value = curfile.name
@@ -18,7 +15,7 @@ function setFile() {
 <template>
     <input id="input" type="file" @input='setFile()'>
     <p>{{filename}}</p>
-    <button type="submit" @click='$emit("sendFile", file)'></button>
+    <button type="submit" @click='$emit("sendFile", file)'>Send</button>
 </template>
 
 <!-- TODO: Change this styling to be more generalized -->
