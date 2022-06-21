@@ -5,7 +5,7 @@ function post(file) {
   if(file != null && file.type !== '' && file.type !== 'unknown') {
     let formData = new FormData();
     formData.append("video", file);
-    fetch("http://localhost:4000/video", {
+    fetch("http://localhost:5000/video", {
       method: 'POST',
       mode: 'no-cors',
       cache: 'no-cache',
