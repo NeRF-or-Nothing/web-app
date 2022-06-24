@@ -5,14 +5,9 @@ import MainPage from "@/components/Header.vue";
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
+    <div id="app">
+        <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
+    </div>
     <div class="wrapper">
       <MainPage msg="NeRF or Nothing!" />
 
@@ -47,8 +42,12 @@ import MainPage from "@/components/Header.vue";
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(green);
   transition: 0.4s;
+}
+
+.darkgreen {
+  color: hsla(160, 100%, 37%, 1);
 }
 
 @media (hover: hover) {
@@ -58,7 +57,6 @@ a,
 }
 
 nav {
-  width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
@@ -83,7 +81,7 @@ nav a:first-of-type {
 }
 
 body {
-  display: flex;
+  display: block;
 }
 
 header {
