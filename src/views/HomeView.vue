@@ -4,7 +4,7 @@ import Upload from '@/components/Upload.vue'
 function post(file) {
   if(file != null && file.type !== '' && file.type !== 'unknown') {
     let formData = new FormData();
-    formData.append("video", file);
+    formData.append("file", file);
     fetch("http://localhost:5000/video", {
       method: 'POST',
       mode: 'no-cors',
@@ -19,6 +19,7 @@ function post(file) {
   } else {
     console.log('File type unknown')
   }
+  router.push('Waiting-Room')
 }
 
 function log(file) {
@@ -29,7 +30,7 @@ function log(file) {
 
 <template>
   <main>
-    <h1>Upload a video and set it up yeah!</h1>
+    <h1>Upload a video and send it to the server:</h1>
     <Upload @send-file='(file) => {post(file)}'/>
   </main>
 </template>
