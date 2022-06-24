@@ -14,12 +14,13 @@ function post(file) {
       body: formData
     })
     .then(
-      router.push({
-        path: '/waitingroom'
-      }))
+      console.log("greetings"))
     .catch(
-      console.log("Error")
+      console.log("fuck")
     )
+    router.push({
+      path: '/waitingroom'
+    })
   } else {
     console.log('File type unknown')
   }
@@ -30,10 +31,8 @@ function log(file) {
 }
 </script>
 
-
 <template>
-  <main>
-    <h1>Upload a video and send it to the server:</h1>
-    <Upload @send-file='(file) => {post(file)}'/>
-  </main>
+  <div class="about">
+    <h1>Welcome to the waiting room</h1>
+  </div>
 </template>
