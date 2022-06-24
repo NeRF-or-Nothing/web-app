@@ -14,8 +14,11 @@ function post(file) {
       body: formData
     })
     .then(
+      data =>
       router.push({
-        path: '/waitingroom'
+        path: '/waitingroom',
+        params: { id: 'testid' },
+        props: true
       }))
     .catch(
       console.log("Error")
