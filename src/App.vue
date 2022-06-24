@@ -42,8 +42,12 @@ import MainPage from "@/components/Header.vue";
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(green);
   transition: 0.4s;
+}
+
+.darkgreen {
+  color: hsla(160, 100%, 37%, 1);
 }
 
 @media (hover: hover) {
@@ -53,7 +57,6 @@ a,
 }
 
 nav {
-  width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
@@ -78,7 +81,7 @@ nav a:first-of-type {
 }
 
 body {
-  display: flex;
+  display: block;
 }
 
 header {
