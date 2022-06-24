@@ -14,13 +14,12 @@ function post(file) {
       body: formData
     })
     .then(
-      console.log("greetings"))
+      router.push({
+        path: '/waitingroom'
+      }))
     .catch(
       console.log("fuck")
     )
-    router.push({
-      path: '/waitingroom'
-    })
   } else {
     console.log('File type unknown')
   }

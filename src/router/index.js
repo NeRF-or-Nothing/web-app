@@ -15,7 +15,6 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-<<<<<<< HEAD
       component: () => import('../views/ExplainView.vue')
     },
     {
@@ -25,20 +24,12 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/WaitingRoom.vue')
-    }
-  ]
-})
-=======
-      component: () => import("../views/ExplainView.vue"),
     },
     {
       path: "/contact",
       name: "contact",
       component: () => import("../views/OurTeam.vue"),
     },
->>>>>>> 1dd2a901fe59f5d71fd8162166b8a8c971a2bbe0
-
-    
   ],
 });
 
