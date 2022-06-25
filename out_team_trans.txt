@@ -36,7 +36,7 @@ Keqian Wang，计算机科学专业，致力于用python的flask从前端接受�
 
 Grey （丁浩）
 Hao(Grey) Ding, CS & MATH dual major student, enjoy video games and movies, plan to clear Death Stranding by October, current struggling in Vue and Js
-丁浩，计算机科学和数学双专业学生，喜欢视频游戏和电影，计划在10月前完成《死亡搁浅》，目前在Vue和Js中奋斗。
+丁浩，计算机科学和数学双专业学生，喜欢视频游戏和电影，计划在10月前通关死亡搁浅。我在负责这个项目的前端，并且目前在Vue和Js中奋斗。
 
 Jackie （赵家炜）
 Jiawei (Jackie) Zhao. I am a RPI computor science dual ECON student and working on the front end portion of this project. Learning vue.js framwork, HTML, CSS along the way.
