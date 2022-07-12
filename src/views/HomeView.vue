@@ -14,17 +14,22 @@ function post(file) {
       body: formData
     })
     .then(
-      data =>
-      router.push({
-        path: '/waitingroom',
-        params: { id: 'testid' },
-        props: true
-      }))
+      function(data) {
+        let id = data.text();
+        router.push({
+          path: `waitingroom`,
+          query: { video: id },
+          props: true
+        });
+      }
+    )
     .catch(
-      console.log("Error")
+      function(error) {
+        console.log(error)
+      }
     )
   } else {
-    console.log('File type unknown')
+    console.log('File type unknown.')
   }
 }
 
