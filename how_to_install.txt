@@ -1,0 +1,27 @@
+How to install i18n in your existing vue project: 
+
+First, to install i18n, we can install it with npm or yarn:
+with npm, we can type this command into the terminal: npm install vue-i18n@8
+
+if you prefer installing with yarn, you can also copy this command: yarn add vue-i18n@8
+
+Second: you can then add the i18n into the project by typing:  vue add i18n
+
+Then, it will ask you some questions: Answer them as following: 
+? The locale of project localization. en
+? The fallback locale of project localization. cn
+? The directory where store localization messages of project. It's stored under `src` directory. locales
+? Enable locale messages in Single file components ? No
+
+Possible Problems: 
+If you hit a error saying that: -- Error: You cannot call "get" on a collection with no paths. Instead, check the "length" property first to verify at least 1 path exists.
+
+Simply add the following code into your main.js file in the project:
+// -------------------------
+new Vue({
+    i18n,
+    render: h => h(App)
+}).$mount('#app');
+// -------------------------
+
+Then, you should be set!
