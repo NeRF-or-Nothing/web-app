@@ -15,7 +15,7 @@ Then, it will ask you some questions: Answer them as following:
 
 Possible Problems: 
 If you hit a error saying that: -- Error: You cannot call "get" on a collection with no paths. Instead, check the "length" property first to verify at least 1 path exists.
-
+-- This is probably because the version incompatiblity between vue2 and vue3.
 Simply add the following code into your main.js file in the project:
 // -------------------------
 new Vue({
