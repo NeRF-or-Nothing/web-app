@@ -1,27 +1,16 @@
 How to install i18n in your existing vue project: 
 
-First, to install i18n, we can install it with npm or yarn:
-with npm, we can type this command into the terminal: npm install vue-i18n@8
+First, once you clone the project down from the main branch of the frontend_app from github. 
 
-if you prefer installing with yarn, you can also copy this command: yarn add vue-i18n@8
+1. Run: "npm install" to get all the node moduels updated for your own machine.
 
-Second: you can then add the i18n into the project by typing:  vue add i18n
+2. Run "npm audit fix" to get all the possible fixes done.
 
-Then, it will ask you some questions: Answer them as following: 
+3. Run "vue add i18n" to add i18n framwork into your project. And answer the questions as following:
+
 ? The locale of project localization. en
-? The fallback locale of project localization. cn
-? The directory where store localization messages of project. It's stored under `src` directory. locales
-? Enable locale messages in Single file components ? No
+? The fallback locale of project localization. ch
+? The directory where store localization messages of project. It'stored under `src` directory. locales
+? Enable legacy API (compatible vue-i18n@v8.x) mode ? No
 
-Possible Problems: 
-If you hit a error saying that: -- Error: You cannot call "get" on a collection with no paths. Instead, check the "length" property first to verify at least 1 path exists.
--- This is probably because the version incompatiblity between vue2 and vue3.
-Simply add the following code into your main.js file in the project:
-// -------------------------
-new Vue({
-    i18n,
-    render: h => h(App)
-}).$mount('#app');
-// -------------------------
-
-Then, you should be set!
+Then, you should be all done.
