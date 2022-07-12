@@ -9,18 +9,21 @@ function post(file) {
     formData.append("file", file);
     fetch("http://localhost:5000/video", {
       method: 'POST',
-      mode: 'no-cors',
       cache: 'no-cache',
       body: formData
     })
     .then(
-      function(data) {
-        let id = data.text();
-        router.push({
-          path: `waitingroom`,
-          query: { video: id },
-          props: true
-        });
+      function(response) {
+        response.text().then(
+          function (text) {
+            console.log(text);
+            router.push({
+              path: `waitingroom`,
+              query: { video: text },
+              props: true
+            })
+          }
+        );
       }
     )
     .catch(
