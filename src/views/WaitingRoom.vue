@@ -6,12 +6,32 @@ const props = defineProps({
   video: String
 })
 
-function getStatus() {
-  console.log("Put in code to get video")
-}
-
 const route = useRoute();
 const video = route.query.video;
+
+function getStatus() {
+  console.log("running")
+  let url = "http://localhost:5000/video/" + video
+  fetch(url, {
+    method: 'GET',
+    cache: 'no-cache'
+  })
+  .then(
+    function(response) {
+      response.text().then(
+        function (text) {
+          console.log(text);
+        }
+      );
+    }
+  )
+  .catch(
+    function(error) {
+      console.log(error)
+    }
+  )
+}
+
 
 getStatus()
 const intervalID = setInterval(getStatus, 10000)
