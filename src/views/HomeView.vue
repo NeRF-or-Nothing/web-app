@@ -35,10 +35,6 @@ function post(file) {
     console.log('File type unknown.')
   }
 }
-
-function log(file) {
-  console.log(file.name)
-}
 </script>
 
 

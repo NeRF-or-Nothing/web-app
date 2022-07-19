@@ -1,6 +1,7 @@
 <script setup>
 import Upload from '@/components/Upload.vue'
 import {useRoute} from 'vue-router'
+import { onUnmounted, ref } from 'vue'
 
 const props = defineProps({
   video: String
@@ -9,8 +10,9 @@ const props = defineProps({
 const route = useRoute();
 const video = route.query.video;
 
+const vidurl = ref("");
+
 function getStatus() {
-  console.log("running")
   let url = "http://localhost:5000/video/" + video
   fetch(url, {
     method: 'GET',
@@ -18,11 +20,11 @@ function getStatus() {
   })
   .then(
     function(response) {
-      response.text().then(
-        function (text) {
-          console.log(text);
+      response.blob().then(
+        function(blob) {
+          vidurl.value = URL.createObjectURL(blob);
         }
-      );
+      )
     }
   )
   .catch(
@@ -32,15 +34,16 @@ function getStatus() {
   )
 }
 
-
 getStatus()
-const intervalID = setInterval(getStatus, 10000)
+const intervalID = setInterval(getStatus, 30000)
+
+onUnmounted(() => clearInterval(intervalID))
 </script>
 
 <template>
   <div class="about">
     <h1>Welcome to the waiting room, your video is {{ video }}.</h1>
     <p>Copy the url to return to this page and get your video.</p>
-    <p>Video status: </p>
+    <p>Video status: <a v-bind:href="vidurl">Download</a></p>
   </div>
 </template>
