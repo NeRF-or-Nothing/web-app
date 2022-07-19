@@ -1,5 +1,7 @@
+<!-- TODO: Check for duplicate user ids by querying the server -->
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import cookies from "vue-cookies";
 import MainPage from "@/components/Header.vue";
 </script>
 
