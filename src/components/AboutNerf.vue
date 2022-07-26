@@ -33,6 +33,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       <ToolingIcon />
     </template>
     <template #heading>How do I use this website?</template>
-    IDK dude
+    You can upload a video and send it to the server, then it will convert your video to a 
+    3D picture. 
   </ListItem>
 </template>

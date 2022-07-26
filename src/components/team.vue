@@ -102,4 +102,14 @@ import SupportIcon from "./icons/IconSupport.vue";
     front end portion of this project. Learning vue.js framwork, HTML, CSS along
     the way.
   </ListItem>
+
+   <ListItem>
+    <template #icon>
+      <ToolingIcon />
+    </template>
+    <template #heading>Jane</template>
+    Jialin(Jane) Zou, CS major at RPI. I am currently working on the front-end portion
+    of this project. But, I'm willing to work on the back-end too. I love foods and
+    swimming.
+  </ListItem>
 </template>

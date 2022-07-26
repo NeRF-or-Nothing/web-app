@@ -7,12 +7,11 @@ import MainPage from "@/components/Header.vue";
 
 <template>
   <header>
-    <div id="app">
-        <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
+    <div id="app" class = "center-me">
+      <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
     </div>
     <div class="wrapper">
       <MainPage msg="NeRF or Nothing!" />
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/explain">About NeRF</RouterLink>

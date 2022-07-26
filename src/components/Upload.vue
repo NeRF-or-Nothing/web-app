@@ -25,7 +25,7 @@ p{
   width: 100%;
   height: 100%;
   text-align: center;
-  line-height: 170px;
+  line-height: 150px;
   pointer-events: none;
   border: 1px dashed var(--color-contrast);
 }
