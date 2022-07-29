@@ -23,6 +23,25 @@ import MainPage from "@/components/Header.vue";
   <RouterView />
 </template>
 
+<script>
+import { useI18n } from 'vue-i18n'
+export default {
+  name: 'App',
+  components: {
+  },
+  setup() {
+    const { t } = useI18n({
+      //inheritLocale: true,
+      //useScope: 'local'
+    })
+
+    // Something todo ..
+
+    return { t }
+  }
+}
+</script>
+
 <style>
 @import "@/assets/base.css";
 
