@@ -1,4 +1,6 @@
 <!-- TODO: Check for duplicate user ids by querying the server -->
+<!-- neeed to change the format and update the home page, add the video/demo to home -->
+
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import cookies from "vue-cookies";
@@ -8,15 +10,16 @@ import MainPage from "@/components/Header.vue";
 <template>
   <header>
     <div id="app" class = "center-me">
-      <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
+      <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="200" height="200" />
     </div>
-    <div class="wrapper">
-      <MainPage msg="NeRF or Nothing!" />
+    <div class="nerf_main">
+      <MainPage class="nerf_title" msg="NeRF or Nothing!" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/explain">About NeRF</RouterLink>
         <RouterLink to="/upload">Upload video</RouterLink>
         <RouterLink to="/contact">Our team</RouterLink>
+        <RouterLink to="/waitingroom">Waiting room</RouterLink>
       </nav>
     </div>
   </header>
@@ -40,7 +43,7 @@ import MainPage from "@/components/Header.vue";
   margin: 0 auto 2rem;
 }
 
-a,
+
 .green {
   text-decoration: none;
   color: var(green);
@@ -50,6 +53,33 @@ a,
 .darkgreen {
   color: hsla(160, 100%, 37%, 1);
 }
+
+.nerf_title{
+  margin-bottom: 1px;
+    font-size: 6vw;
+    margin-top: 0;
+    font-family: 'Varela Round',sans-serif;
+    color: #4d4d4d;
+    line-height: 65px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+
+.nerf_main{
+    padding-top: 0;
+    background-color: #fff;
+    padding-bottom: 2px;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    color: #333;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+
+
 
 @media (hover: hover) {
   a:hover {

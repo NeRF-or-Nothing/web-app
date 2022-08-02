@@ -1,3 +1,6 @@
+
+
+
 <script setup>
 defineProps({
   msg: {
@@ -7,11 +10,22 @@ defineProps({
 })
 </script>
 
+
+
+
+
+
+
+
+
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
       Home page for the NeRF or nothing project.
+    
+
+
     </h3>
   </div>
 </template>
