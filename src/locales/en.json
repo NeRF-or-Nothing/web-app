@@ -1,9 +1,14 @@
 {
+    "general": {
+        "homepage": "Home page for the NeRF or nothing project."
+    },
     "main_page":{
         "home": "home",
+        "upload_v":"Upload video",
         "upload":"Upload a video and send it to the server: ",
         "drag": "drag or select video file",
-        "send": "send"
+        "send": "send",
+        "ourteam": "Our team"
     },
     "about_page":{
         "About NeRF": "About NeRF",

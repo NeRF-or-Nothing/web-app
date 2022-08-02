@@ -1,6 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import MainPage from "@/components/Header.vue";
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n({
+  //inheritLocale: true,
+  //useScope: 'local'
+})
 </script>
 
 <template>
@@ -12,10 +17,10 @@ import MainPage from "@/components/Header.vue";
       <MainPage msg="NeRF or Nothing!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/explain">About NeRF</RouterLink>
-        <RouterLink to="/upload">Upload video</RouterLink>
-        <RouterLink to="/contact">Our team</RouterLink>
+        <RouterLink to="/">{{t('main_page.home')}}</RouterLink>
+        <RouterLink to="/explain">{{t('about_page.About NeRF')}}</RouterLink>
+        <RouterLink to="/upload">{{t('main_page.upload_v')}}</RouterLink>
+        <RouterLink to="/contact">{{t('main_page.ourteam')}}</RouterLink>
       </nav>
     </div>
   </header>

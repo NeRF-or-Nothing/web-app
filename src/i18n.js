@@ -10,11 +10,16 @@ import { createI18n } from 'vue-i18n'
 
 const messages= {
     en: {
+        "general": {
+            "homepage": "Home page for the NeRF or nothing project.",
+        },
         "main_page":{
-        "home": "home",
-        "upload":"Upload a video and send it to the server: ",
-        "drag": "drag or select video file",
-        "send": "send"
+            "home": "home",
+            "upload_v":"Upload video",
+            "upload":"Upload a video and send it to the server: ",
+            "drag": "drag or select video file",
+            "send": "send",
+            "ourteam": "Our team",
         },
         "about_page":{
             "About NeRF": "About NeRF",
@@ -48,11 +53,16 @@ const messages= {
         }
     },
     cn :{
+        "general": {
+            "homepage": "NeRF or nothing!项目的主页",
+        },
         "main_page":{
             "home": "主页",
+            "upload_v":"上传视频",
             "upload":"上传一个视频并将其发送至服务器: ",
             "drag": "拖动或者选择文件",
-            "send": "发送"
+            "send": "发送",
+            "ourteam": "团队成员",
         },
         "about_page":{
             "About NeRF": "关于NeRF",
@@ -89,7 +99,7 @@ const messages= {
 }
 export default createI18n({
   legacy: false,
-  locale:'cn',
-  fallbackLocale:'en',
+  locale:'en',
+  fallbackLocale:'cn',
   messages: messages,
 })
