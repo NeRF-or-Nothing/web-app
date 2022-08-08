@@ -15,11 +15,12 @@ import MainPage from "@/components/Header.vue";
     <div class="nerf_main">
       <MainPage class="nerf_title" msg="NeRF or Nothing!" />
       <nav>
-        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/" >Home</RouterLink>
         <RouterLink to="/explain">About NeRF</RouterLink>
         <RouterLink to="/upload">Upload video</RouterLink>
         <RouterLink to="/contact">Our team</RouterLink>
         <RouterLink to="/waitingroom">Waiting room</RouterLink>
+     
       </nav>
     </div>
   </header>
@@ -75,6 +76,7 @@ import MainPage from "@/components/Header.vue";
     font-size: 12px;
     line-height: 20px;
     text-align: center;
+     left: -120px;
 
 }
 
@@ -88,23 +90,42 @@ import MainPage from "@/components/Header.vue";
 }
 
 nav {
-  font-size: 12px;
+
   text-align: center;
   margin-top: 2rem;
+ 
+  right: auto;
+  position: relative;
+  float: left;  
+  left: -85px;
+    background-color: rgb(227, 251, 227);
+
+  font-style: "color: black";
+
+
 }
 
 nav a.router-link-exact-active {
   color: var(--color-text);
+   font-size: 22px;
+ font-style: "color: black";
+
 }
 
 nav a.router-link-exact-active:hover {
   background-color: transparent;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  font-style: "color: black";
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  font-size: 20px;
+  text-decoration: none;
+  font-style: "color: black";
+
 }
 
 nav a:first-of-type {
@@ -122,7 +143,12 @@ header {
 }
 
 .logo {
-  margin: 0 2rem 0 0;
+
+  position: absolute;
+  top: -111px;
+  left: -150px;
+
+
 }
 
 nav {
@@ -133,4 +159,8 @@ nav {
   padding: 1rem 0;
   margin-top: 1rem;
 }
+
+
+
+
 </style>
