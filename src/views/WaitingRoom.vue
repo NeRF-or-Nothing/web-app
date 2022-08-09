@@ -50,12 +50,11 @@ function getStatus() {
 getStatus();
 const intervalID = setInterval(getStatus, 30000);
 
-onUnmounted(() => clearInterval(intervalID));
+onUnmounted(function() {clearInterval(intervalID); URL.revokeObjectURL(vidstatus.value);});
 </script>
 
 <template>
   <div class="about">
-    <center>
     <h1>Welcome to the waiting room, your video id is: <br> {{ video }}.</h1>
     <p>Copy the url to return to this page and get your video</p>
     <h4>Video status: {{vidstatus}}</h4>
@@ -64,6 +63,12 @@ onUnmounted(() => clearInterval(intervalID));
     <video v-if='showvid' width="320" height="240" controls>
     <source v-bind:src="vidurl" type="video/mp4">
     </video>
-    </center>
   </div>
 </template>
+
+<style>
+div {
+  text-align: center;
+}
+</style>
+
