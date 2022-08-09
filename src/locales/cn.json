@@ -1,0 +1,44 @@
+{
+    "general": {
+        "homepage": "NeRF or nothing!项目的主页"
+    },
+    "main_page":{
+        "home": "主页",
+        "upload_v":"上传视频",
+        "upload":"上传一个视频并将其发送至服务器: ",
+        "drag": "拖动或者选择文件",
+        "send": "发送",
+        "ourteam": "团队成员"
+    },
+    "about_page":{
+        "About NeRF": "关于NeRF",
+        "about_NeRF_detail":"关于神经辐射场",
+        "What is NeRF?": "什么是NeRF?",
+        "summary": "在过去两年内,关于NeRF(神经辐射场)的研究呈爆炸式增长. NeRF作为一种从2D图像渲染成3D场景的新技术,它发展的很快,并且这可能是实现相机从未能实现的逼真的视点渲染的最好方式.Facebook AI和谷歌研究所等大型研究实验室都在争取实现此方法,以便为自动驾驶汽车提供逼真的渲染模型,并且提高3D扫描的可用性.我们的项目(NeRF or nothing)将是一个基于此技术的网络应用,它会允许人们输入视频或者一系列照片,并将这些场景渲染成全新且逼真的视图.这将包括用户创建\"飞越\"或在他们捕获的场景中移动虚拟摄像机以从看不见的角度创建视频的能力。",
+        "How_to_use": "我应该怎么使用这个网页?",
+        "idk": "兄弟我不到啊"
+    },
+    "member_page":{
+        "about_team": "关于我们的团队：",
+        "Eric_general": "团队领队: Eric",
+        "Eric_detail": "Eric Nelson, 计算机专业， 我对这个项目的机器学习和计算机视觉方面感兴趣，也对确保每个人的个人成功感兴趣。",
+        "Anthony_general": "Anthony",
+        "Anthony_detail": "Anthony DiGiovanna, 计算机专业， 我对机器学习和人工智能很着迷。在后端与来自运动的结构 (structure from motion) 和NeRFs (神经辐射场)合作。",
+        "Amaan_general": "Amaan",
+        "Amaan_detail": "Amaan Qureshi,电子工程和数学双专业,在空闲时间喜欢CS和逆向工程,正在为这个项目开发API。",
+        "Dylan_general": "Dylan",
+        "Dylan_detail": "Dylan Taylor, 计算机专业, 我喜欢如何用计算来解决日常问题，我现在更多的是在项目的服务和管理容器领域工作。",
+        "Sam_general": "Sam",
+        "Sam_detail": "Sam DeMarrais, 我是计算机科学和计算生物学专业的学生。我正在做前端的工作，我希望通过这个项目的工作，更多地了解机器学习、网络服务器和网站的功能。",
+        "Yuk_Ting_general": "江钰婷",
+        "Yuk_Ting_detail": "江钰婷,计算机专业, 负责用flask构建python网络服务器。",
+        "Annie_general": "徐嘉莹",
+        "Annie_detail": "徐嘉莹,我是RPI的计算机科学工程双计算科学专业的学生。我目前正在进行项目的后端工作, 重点是运动的结构。我喜欢吃零食和打羽毛球。",
+        "Keqian_general": "王可芊",
+        "Keqian_detail": "王可芊, 计算机科学专业, 致力于用python的flask从前端接受视频。",
+        "Grey_general": "丁浩",
+        "Grey_detail": "丁浩,计算机科学和数学双专业学生,喜欢视频游戏和电影,计划在10月前通关死亡搁浅。我在负责这个项目的前端,并且目前在Vue和Js中奋斗。",
+        "Jackie_general": "赵家炜",
+        "Jackie_detail": "赵家炜,我是RPI计算科学和经济学的双专业学生,正在从事这个项目的前端部分。我在一路学习vue.js框架、HTML、CSS。"
+    }
+}

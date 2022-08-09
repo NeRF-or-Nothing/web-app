@@ -1,0 +1,16 @@
+How to install i18n in your existing vue project: 
+
+First, once you clone the project down from the main branch of the frontend_app from github. 
+
+1. Run: "npm install" to get all the node moduels updated for your own machine.
+
+2. Run "npm audit fix" to get all the possible fixes done.
+
+3. Run "vue add i18n" to add i18n framwork into your project. And answer the questions as following:
+
+? The locale of project localization. en
+? The fallback locale of project localization. ch
+? The directory where store localization messages of project. It'stored under `src` directory. locales
+? Enable legacy API (compatible vue-i18n@v8.x) mode ? No
+
+Then, you should be all done.
