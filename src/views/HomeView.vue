@@ -13,27 +13,31 @@ function post(file) {
     formData.append("file", file);
     fetch("http://localhost:5000/video", {
       method: 'POST',
-      mode: 'no-cors',
       cache: 'no-cache',
       body: formData
     })
     .then(
-      data =>
-      router.push({
-        path: '/waitingroom',
-        params: { id: 'testid' },
-        props: true
-      }))
+      function(response) {
+        response.text().then(
+          function (text) {
+            console.log(text);
+            router.push({
+              path: `waitingroom`,
+              query: { video: text },
+              props: true
+            })
+          }
+        );
+      }
+    )
     .catch(
-      console.log("Error")
+      function(error) {
+        console.log(error)
+      }
     )
   } else {
-    console.log('File type unknown')
+    console.log('File type unknown.')
   }
-}
-
-function log(file) {
-  console.log(file.name)
 }
 </script>
 

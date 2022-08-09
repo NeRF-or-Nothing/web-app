@@ -1,38 +1,49 @@
 <script setup>
 import Upload from '@/components/Upload.vue'
-import router from '@/router'
+import {useRoute} from 'vue-router'
+import { onUnmounted, ref } from 'vue'
 
+const props = defineProps({
+  video: String
+})
 
-function post(file) {
-  if(file != null && file.type !== '' && file.type !== 'unknown') {
-    let formData = new FormData();
-    formData.append("file", file);
-    fetch("http://localhost:5000/video", {
-      method: 'POST',
-      mode: 'no-cors',
-      cache: 'no-cache',
-      body: formData
-    })
-    .then(
-      console.log("greetings"))
-    .catch(
-      console.log("fuck")
-    )
-    router.push({
-      path: '/waitingroom'
-    })
-  } else {
-    console.log('File type unknown')
-  }
+const route = useRoute();
+const video = route.query.video;
+
+const vidurl = ref("");
+
+function getStatus() {
+  let url = "http://localhost:5000/video/" + video
+  fetch(url, {
+    method: 'GET',
+    cache: 'no-cache'
+  })
+  .then(
+    function(response) {
+      response.blob().then(
+        function(blob) {
+          vidurl.value = URL.createObjectURL(blob);
+        }
+      )
+    }
+  )
+  .catch(
+    function(error) {
+      console.log(error)
+    }
+  )
 }
 
-function log(file) {
-  console.log(file.name)
-}
+getStatus()
+const intervalID = setInterval(getStatus, 30000)
+
+onUnmounted(() => clearInterval(intervalID))
 </script>
 
 <template>
   <div class="about">
-    <h1>Welcome to the waiting room</h1>
+    <h1>Welcome to the waiting room, your video is {{ video }}.</h1>
+    <p>Copy the url to return to this page and get your video.</p>
+    <p>Video status: <a v-bind:href="vidurl">Download</a></p>
   </div>
 </template>
