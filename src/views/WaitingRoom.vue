@@ -55,9 +55,15 @@ onUnmounted(() => clearInterval(intervalID));
 
 <template>
   <div class="about">
-    <h1>Welcome to the waiting room, your video is {{ video }}.</h1>
-    <p>Copy the url to return to this page and get your video.</p>
+    <center>
+    <h1>Welcome to the waiting room, your video id is: <br> {{ video }}.</h1>
+    <p>Copy the url to return to this page and get your video</p>
     <h4>Video status: {{vidstatus}}</h4>
     <p v-if='showvid'><a v-bind:href="vidurl">Download</a></p>
+    
+    <video v-if='showvid' width="320" height="240" controls>
+    <source v-bind:src="vidurl" type="video/mp4">
+    </video>
+    </center>
   </div>
 </template>
