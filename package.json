@@ -11,12 +11,11 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "i18n": "^0.15.0",
     "pinia": "^2.0.14",
     "vue": "^3.2.36",
-
-    "vue-i18n": "^9.1.10",
     "vue-cookies": "^1.8.1",
-
+    "vue-i18n": "^9.1.10",
     "vue-router": "^4.0.15",
     "yarn": "^1.22.19"
   },
