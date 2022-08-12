@@ -5,11 +5,11 @@ import ToolingIcon from "./icons/IconTooling.vue";
 import EcosystemIcon from "./icons/IconEcosystem.vue";
 import CommunityIcon from "./icons/IconCommunity.vue";
 import SupportIcon from "./icons/IconSupport.vue";
-import { useI18n } from 'vue-i18n'
+import { useI18n } from "vue-i18n";
 const { t } = useI18n({
   //inheritLocale: true,
   //useScope: 'local'
-})
+});
 </script>
 
 <template>
@@ -17,8 +17,8 @@ const { t } = useI18n({
     <template #icon>
       <DocumentationIcon />
     </template>
-    <template #heading>{{t('about_page.What is NeRF?')}}</template>
-    {{t('about_page.summary')}}
+    <template #heading>{{ t("about_page.What is NeRF?") }}</template>
+    {{ t("about_page.summary") }}
   </ListItem>
 
   <ListItem>
@@ -48,6 +48,18 @@ const { t } = useI18n({
     the MongoDB database ready for the Front-end VueJS to access, and displayed
     in the page.
   </ListItem>
+
+  <div id="app">
+    <p style="text-align: center">
+      <img
+        alt="Project Overview"
+        class="center"
+        src="../assets/Full_Project.png"
+        width="500"
+        height="500"
+      />
+    </p>
+  </div>
 
   <ListItem>
     <template #icon>
@@ -92,6 +104,18 @@ const { t } = useI18n({
     (information draw from[https://datagen.tech/](https://datagen.tech/))
   </ListItem>
 
+  <div id="app">
+    <p style="text-align: center">
+      <img
+        alt="Project Overview"
+        class="center"
+        src="../assets/Worker_.png"
+        width="500"
+        height="500"
+      />
+    </p>
+  </div>
+
   <ListItem>
     <template #icon>
       <ToolingIcon />
@@ -120,4 +144,16 @@ const { t } = useI18n({
     output fly through videos, as such implementation is easier for the frontend
     and backend to access the needed resources.
   </ListItem>
+
+  <div id="app">
+    <p style="text-align: center">
+      <img
+        alt="Project Overview"
+        class="center"
+        src="../assets/Webserver.png"
+        width="500"
+        height="500"
+      />
+    </p>
+  </div>
 </template>
