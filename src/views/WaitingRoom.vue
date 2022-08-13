@@ -60,7 +60,7 @@ onUnmounted(function() {clearInterval(intervalID); URL.revokeObjectURL(vidstatus
     <h4>Video status: {{vidstatus}}</h4>
     <p v-if='showvid'><a v-bind:href="vidurl">Download</a></p>
     
-    <video v-if='showvid' width="320" height="240" controls>
+    <video v-if='showvid' width="640" height="480" controls>
     <source v-bind:src="vidurl" type="video/mp4">
     </video>
   </div>
