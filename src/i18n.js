@@ -99,7 +99,7 @@ const messages= {
 }
 export default createI18n({
   legacy: false,
-  locale:'en',
-  fallbackLocale:'cn',
+  locale:'cn',
+  fallbackLocale:'en',
   messages: messages,
 })
