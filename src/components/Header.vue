@@ -1,9 +1,14 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
 defineProps({
   msg: {
     type: String,
     required: true
   }
+})
+const { t } = useI18n({
+  //inheritLocale: true,
+  //useScope: 'local'
 })
 </script>
 
@@ -11,7 +16,7 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      Home page for the NeRF or nothing project.
+      {{t('general.homepage')}}
     </h3>
   </div>
 </template>

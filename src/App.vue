@@ -3,38 +3,66 @@
 import { RouterLink, RouterView } from "vue-router";
 import cookies from "vue-cookies";
 import MainPage from "@/components/Header.vue";
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n({
+  //inheritLocale: true,
+  //useScope: 'local'
+})
 </script>
 
-<template>
+<template id="container">
+  <div class="main">
+
+  </div>
   <header>
     <div id="app">
-        <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
+      <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
     </div>
     <div class="wrapper">
       <MainPage msg="NeRF or Nothing!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/explain">About NeRF</RouterLink>
-        <RouterLink to="/upload">Upload video</RouterLink>
-        <RouterLink to="/contact">Our team</RouterLink>
+        <RouterLink to="/">{{t('main_page.home')}}</RouterLink>
+        <RouterLink to="/explain">{{t('about_page.About NeRF')}}</RouterLink>
+        <RouterLink to="/upload">{{t('main_page.upload_v')}}</RouterLink>
+        <RouterLink to="/contact">{{t('main_page.ourteam')}}</RouterLink>
       </nav>
     </div>
   </header>
-
   <RouterView />
 </template>
+
+<script>
+import { useI18n } from 'vue-i18n'
+export default {
+  name: 'App',
+  components: {
+  },
+  setup() {
+    const { t } = useI18n({
+      //inheritLocale: true,
+      //useScope: 'local'
+    })
+
+    // Something todo ..
+
+    return { t }
+  }
+}
+</script>
 
 <style>
 @import "@/assets/base.css";
 
 #app {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
+  color: white;
   margin: 0 auto;
   padding: 2rem;
 
   font-weight: normal;
+
 }
+
 
 .logo {
   display: block;
@@ -93,7 +121,7 @@ header {
 }
 
 .logo {
-  margin: 0 2rem 0 0;
+  margin: 0;
 }
 
 nav {
