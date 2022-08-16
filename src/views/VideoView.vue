@@ -5,7 +5,27 @@
       <video
         ref="myVideo"
         :poster="poster"
-        src="../assets/video.mp4"
+        src="../assets/Copy%20of%20lego.mp4"
+        :controls="controls"
+        oncontextmenu="return false"
+        @timeupdate="timeupdate"
+        controlslist="nodownload"
+        class="video-box"
+      ></video>
+      <video
+        ref="myVideo"
+        :poster="poster"
+        src="../assets/Copy%20of%20hotdog.mp4"
+        :controls="controls"
+        oncontextmenu="return false"
+        @timeupdate="timeupdate"
+        controlslist="nodownload"
+        class="video-box"
+      ></video>
+      <video
+        ref="myVideo"
+        :poster="poster"
+        src="../assets/Copy%20of%20house.mp4"
         :controls="controls"
         oncontextmenu="return false"
         @timeupdate="timeupdate"
@@ -15,6 +35,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
