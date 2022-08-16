@@ -70,11 +70,13 @@ function setFile() {
     </div>
     <!--      </button>-->
   </div>
+
 </template>
 
 <!-- TODO: Change this styling to be more generalized -->
 
 <style scoped>
+
 
 .parent{
   margin-top: 30px;
@@ -92,7 +94,7 @@ p{
   pointer-events: none;
   border: 1px dashed var(--color-contrast);
 }
-input{
+input {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -102,7 +104,7 @@ input{
   opacity: 0;
   border-color: white;
 }
-button{
+button {
   top: 5px;
   background: var(--color-theme);
   border: none;

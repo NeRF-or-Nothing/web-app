@@ -23,7 +23,6 @@ const { t } = useI18n({
       <nav>
         <RouterLink to="/">{{t('main_page.home')}}</RouterLink>
         <RouterLink to="/explain">{{t('about_page.About NeRF')}}</RouterLink>
-        <RouterLink to="/upload">{{t('main_page.upload_v')}}</RouterLink>
         <RouterLink to="/contact">{{t('main_page.ourteam')}}</RouterLink>
       </nav>
     </div>
