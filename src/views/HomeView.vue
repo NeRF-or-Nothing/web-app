@@ -1,11 +1,11 @@
 <script setup>
-import Upload from "@/components/Upload.vue";
-import router from "@/router";
-import { useI18n } from "vue-i18n";
+import Upload from '@/components/Upload.vue'
+import router from '@/router'
+import { useI18n } from 'vue-i18n'
 const { t } = useI18n({
   //inheritLocale: true,
   //useScope: 'local'
-});
+})
 
 function post(file) {
   if (file != null && file.type !== "" && file.type !== "unknown") {
@@ -37,14 +37,9 @@ function post(file) {
 
 <template>
   <main>
-    <h1>{{ t("main_page.drag") }}</h1>
-    <Upload
-      @send-file="
-        (file) => {
-          post(file);
-        }
-      "
-    />
+
+<!--    <h1>{{t('main_page.drag')}}</h1>-->
+    <Upload @send-file='(file) => {post(file)}'/>
   </main>
 
   <ListItem>
@@ -66,3 +61,6 @@ function post(file) {
     </h2>
   </ListItem>
 </template>
+
+
+

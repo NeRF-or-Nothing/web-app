@@ -10,14 +10,16 @@ const { t } = useI18n({
 })
 </script>
 
-<template>
+<template id="container">
+  <div class="main">
+
+  </div>
   <header>
     <div id="app">
-        <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
+      <img alt = "Nerf logo" class = "logo" src="./assets/logo.png" width="300" height="300" />
     </div>
     <div class="wrapper">
       <MainPage msg="NeRF or Nothing!" />
-
       <nav>
         <RouterLink to="/">{{t('main_page.home')}}</RouterLink>
         <RouterLink to="/explain">{{t('about_page.About NeRF')}}</RouterLink>
@@ -25,7 +27,6 @@ const { t } = useI18n({
       </nav>
     </div>
   </header>
-
   <RouterView />
 </template>
 
@@ -52,12 +53,15 @@ export default {
 @import "@/assets/base.css";
 
 #app {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
+  color: white;
   margin: 0 auto;
   padding: 2rem;
 
   font-weight: normal;
+
 }
+
 
 .logo {
   display: block;
@@ -116,7 +120,7 @@ header {
 }
 
 .logo {
-  margin: 0 2rem 0 0;
+  margin: 0;
 }
 
 nav {
