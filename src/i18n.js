@@ -16,6 +16,7 @@ const messages= {
         "main_page":{
             "home": "home",
             "upload_v":"Upload video",
+            "video": "video",
             "upload":"Upload a video and send it to the server: ",
             "drag": "drag or select video file",
             "send": "send",

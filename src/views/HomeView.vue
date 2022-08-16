@@ -44,7 +44,10 @@ function post(file) {
 
 <template>
   <main>
-    <h1>{{t('main_page.drag')}}</h1>
+<!--    <h1>{{t('main_page.drag')}}</h1>-->
     <Upload @send-file='(file) => {post(file)}'/>
   </main>
 </template>
+
+
+
