@@ -4,6 +4,43 @@ const { t } = useI18n({
   //inheritLocale: true,
   //useScope: 'local'
 })
+
+const username = ref('');
+const password = ref('');
+const confirmPassword = ref('');
+
+const signUp = async () => {
+  if (password.value !== confirmPassword.value) {
+    alert('Passwords do not match')
+    return
+  }
+}
+
+// const endpoint = THE API ENDPOINT NEED TO ADD EVENTUALLY
+
+const requestOptions = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      username: username.value,
+      password: password.value,
+    }),
+  };
+
+try {
+    const response = await fetch (endpoint, requestOptions);
+    const data = await response.json();
+
+    if (response.ok) {
+      console.log(data);
+    } else {
+      console.error(data);
+    }
+  } catch (error) {
+    console.error(error);
+  }
 </script>
 
 <template>
@@ -16,6 +53,7 @@ const { t } = useI18n({
     </form>
 
 </template>
+
 
 <style scoped>
 * {
@@ -37,7 +75,9 @@ body {
 
 form {
     margin-top: 50px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
