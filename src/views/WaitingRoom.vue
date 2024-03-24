@@ -15,7 +15,7 @@ const vidstatus = ref("Not done");
 const showvid = ref(false);
 
 function getStatus() {
-  let url = "http://localhost:5000/data/nerf/" + video
+  let url = "http://localhost:5000/nerfvideo/" + video
   fetch(url, {
     method: 'GET',
     cache: 'no-cache'
